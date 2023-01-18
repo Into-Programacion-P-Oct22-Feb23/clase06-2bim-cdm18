@@ -19,14 +19,15 @@ public class Principal {
         int valorA = OperadorUno.obtenerNumero(100);
         int valorB = OperadorUno.obtenerNumero(10);
         int suma = OperadorDos.obtenerSuma(valorA, valorB);
-        System.out.printf("La suma de %d + %d es igual a: %d\n",
+        int multiplicacion = OperadorTres.ObtenerMultiplicacion(valorA, valorB);
+
+        System.out.printf("La suma de %d + %d es igual a: %d\n"
+                + "La multiplicacion de %d y %d es igual a: %d\n",
                 valorA,
                 valorB,
-                suma);
-        
-        int multiplicacion = OperadorTres.ObtenerMultiplicacion(valorA, valorB);
-        System.out.printf("El resultado de la multiplicacion de %d y %d es igual"
-                + " a: %d\n",valorA,valorB, multiplicacion);
+                suma, valorA,
+                valorB,
+                multiplicacion);
+
     }
 }
-
