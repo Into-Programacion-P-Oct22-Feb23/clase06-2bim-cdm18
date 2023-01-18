@@ -9,15 +9,12 @@ package paquete05;
  * @author SALA I
  */
 public class OperadorTres {
-    
-
 
     public static int ObtenerMultiplicacion(int a, int b) {
-        
+
         int multiplicacion = a * b;
-        
-        
+
         return multiplicacion;
-        
+
     }
 }
