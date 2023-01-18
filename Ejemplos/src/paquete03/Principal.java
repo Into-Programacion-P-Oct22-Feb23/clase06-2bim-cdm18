@@ -7,6 +7,7 @@ package paquete03;
 
 import paquete04.OperadorUno;
 import paquete04.OperadorDos;
+import paquete05.OperadorTres;
 
 /**
  *
@@ -22,5 +23,10 @@ public class Principal {
                 valorA,
                 valorB,
                 suma);
+        
+        int multiplicacion = OperadorTres.ObtenerMultiplicacion(valorA, valorB);
+        System.out.printf("El resultado de la multiplicacion de %d y %d es igual"
+                + " a: %d\n",valorA,valorB, multiplicacion);
     }
 }
+
